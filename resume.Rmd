@@ -6,9 +6,7 @@ output:
     toc_float: true
 ---
 
-This page contains information on my educational and professional experience, which can also be accessed in the LinkedIn profile below: 
-
-* [My LinkedIn](https://www.linkedin.com/in/hannah-briggs-47ab08134/)
+This page contains information on my educational and professional experience:
 
 ## Education {.tabset}
 
