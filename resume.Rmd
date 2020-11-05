@@ -1,0 +1,120 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+This page contains information on my educational and professional experience, which can also be accessed in the LinkedIn profile below: 
+
+* [My LinkedIn](linkedin.com/in/hannah-briggs-47ab08134)
+
+## Education {.tabset}
+
+### Gonzaga University (2012-2016)
+
+Degree: 
+
+* B.S. in Biology 
+
+Relevant Coursework: 
+
+* Introductory Statistics
+* Sociology of Health and Medicine
+* Biochemistry
+* Comparative Endocrinology
+* Human Anatomy and Physiology I & II
+* Intermediate Spanish
+
+Volunteer - Science in Action:
+
+* Educational outreach to local elementary schools to encourage careers in STEM and obtaining higher education
+
+### Columbia University (2019-2021)
+
+Degree: 
+
+* Master in Public Health Candidate in Epidemiology
+* Certificate: Global Health
+
+Relevant Coursework: 
+
+* Research Methods & Application
+* Application of Epidemiologic Research Methods (SAS Programming)
+* Analysis of Categorical Data
+* Priorities in Global Public Health
+* Protecting Children in Humanitarian Settings
+
+## Publications 
+
+The Evidence Consortium on Women's Groups:
+
+* [Impact of COVID-19 on Opportunities for Adolescent Girls and the Role of Girls' Groups](https://www.popcouncil.org/uploads/pdfs/2020PGY_ECWG-AdolescentGirlsCOVID.pdf)
+
+## Experience {.tabset}
+
+### Columbia University (2020-Present)
+
+Teaching Assistant at the Mailman School of Public Health:
+
+* Course: Research Methods and Applications, Quantitative Research
+
+Responsibilities: 
+
+* Assist faculty with facilitating online lectures 
+* Lead a lab for a subsection of first year graduate students to review lecture concepts and example problems
+
+### Population Countil (2020-Present)
+
+Currently serving as a Research Assistant at the Population Council, based in NYC. 
+
+Responsibilities:
+
+* Conducting an ongoing review on the health, social, and economic impacts of COVID-19 and its response on gender and sex
+* Investigated potential pathways for girls’ empowerment groups to help offset adverse impacts for vulnerable communities during COVID-19
+via rapid literature review and informal key informant interviews 
+* Collaborated with staff from American Institutes for Research and the Bill & Melinda Gates Foundation
+* Assisted in write up of briefs and presentation of data on the knowledge, attitudes, and beliefs on COVID-19 in Indigenous municipalities of Guatemala
+
+### Advocates for Children of NYC (2018-2019)
+
+Served as a Project Associate on "Project Achieve":
+
+* [Project Achieve](https://www.advocatesforchildren.org/who_we_serve/foster_care)
+
+Responsibilities: 
+
+* Provided education advocacy for students in or at risk of placement in foster care 
+* Managed personal caseload of students, with frequent challenges related to disabilities, mental health, and trauma history
+* Performed and presented descriptive analysis of project data
+* Created and compiled resources for local foster care agencies and conducted community outreach
+* Assisted in documenting student case studies for grant applications
+
+### ScribeAmerica (2016-2018)
+
+Served as s Medical Scribe and Quality Assurance Associate (QAA) with ScribeAmerica in Spokane, WA. 
+
+Scribe Responsibilities: 
+
+* Eased physician documentation burden
+* Documented patient history, regimen adherence, and provider assessment and plan with high efficiency and accuracy
+* Familiarity with medical terminology, medical decision making, and electronic medical records (EPIC)
+* Clinics: Pediatric Pulmonology and Cystic Fibrosis, Cardiology, and Gastroenterology (Hepatology)
+
+Additional QAA Responsibilities (2017-2018): 
+
+* Supervised and facilitated staff training
+* Evaluated medical scribes and evaluated chart documentation to ensure quality 
+* Coordinated with medical providers regarding plans for staff improvement when necessary 
+
+## Other Skills & Certifications
+* Training in Trauma-Informed Care (Sanctuary Model)
+* Medical Terminology
+* Electronic Medical Records (EPIC)
+* SAS (Intermediate proficiency)
+* R (Intermediate Proficiency)
+* Beer Certified Server (Cicerone Level 1)
+* Language: English (Fluent); Spanish (Intermediate)
+
+

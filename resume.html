@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Resume</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="resume.html">Resume</a>
+</li>
+<li>
+  <a href="dashboard_data.html">NYC Food Inspections</a>
+</li>
+<li>
+  <a href="mailto:&lt;heb2133@cumc.columbia.edu&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/briggsh29/">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Resume</h1>
+
+</div>
+
+
+<p>This page contains information on my educational and professional experience, which can also be accessed in the LinkedIn profile below:</p>
+<ul>
+<li><a href="linkedin.com/in/hannah-briggs-47ab08134">My LinkedIn</a></li>
+</ul>
+<div id="education" class="section level2 tabset">
+<h2>Education</h2>
+<div id="gonzaga-university-2012-2016" class="section level3">
+<h3>Gonzaga University (2012-2016)</h3>
+<p>Degree:</p>
+<ul>
+<li>B.S. in Biology</li>
+</ul>
+<p>Relevant Coursework:</p>
+<ul>
+<li>Introductory Statistics</li>
+<li>Sociology of Health and Medicine</li>
+<li>Biochemistry</li>
+<li>Comparative Endocrinology</li>
+<li>Human Anatomy and Physiology I &amp; II</li>
+<li>Intermediate Spanish</li>
+</ul>
+<p>Volunteer - Science in Action:</p>
+<ul>
+<li>Educational outreach to local elementary schools to encourage careers in STEM and obtaining higher education</li>
+</ul>
+</div>
+<div id="columbia-university-2019-2021" class="section level3">
+<h3>Columbia University (2019-2021)</h3>
+<p>Degree:</p>
+<ul>
+<li>Master in Public Health Candidate in Epidemiology</li>
+<li>Certificate: Global Health</li>
+</ul>
+<p>Relevant Coursework:</p>
+<ul>
+<li>Research Methods &amp; Application</li>
+<li>Application of Epidemiologic Research Methods (SAS Programming)</li>
+<li>Analysis of Categorical Data</li>
+<li>Priorities in Global Public Health</li>
+<li>Protecting Children in Humanitarian Settings</li>
+</ul>
+</div>
+</div>
+<div id="publications" class="section level2">
+<h2>Publications</h2>
+<p>The Evidence Consortium on Women’s Groups:</p>
+<ul>
+<li><a href="https://www.popcouncil.org/uploads/pdfs/2020PGY_ECWG-AdolescentGirlsCOVID.pdf">Impact of COVID-19 on Opportunities for Adolescent Girls and the Role of Girls’ Groups</a></li>
+</ul>
+</div>
+<div id="experience" class="section level2 tabset">
+<h2>Experience</h2>
+<div id="columbia-university-2020-present" class="section level3">
+<h3>Columbia University (2020-Present)</h3>
+<p>Teaching Assistant at the Mailman School of Public Health:</p>
+<ul>
+<li>Course: Research Methods and Applications, Quantitative Research</li>
+</ul>
+<p>Responsibilities:</p>
+<ul>
+<li>Assist faculty with facilitating online lectures</li>
+<li>Lead a lab for a subsection of first year graduate students to review lecture concepts and example problems</li>
+</ul>
+</div>
+<div id="population-countil-2020-present" class="section level3">
+<h3>Population Countil (2020-Present)</h3>
+<p>Currently serving as a Research Assistant at the Population Council, based in NYC.</p>
+<p>Responsibilities:</p>
+<ul>
+<li>Conducting an ongoing review on the health, social, and economic impacts of COVID-19 and its response on gender and sex</li>
+<li>Investigated potential pathways for girls’ empowerment groups to help offset adverse impacts for vulnerable communities during COVID-19 via rapid literature review and informal key informant interviews</li>
+<li>Collaborated with staff from American Institutes for Research and the Bill &amp; Melinda Gates Foundation</li>
+<li>Assisted in write up of briefs and presentation of data on the knowledge, attitudes, and beliefs on COVID-19 in Indigenous municipalities of Guatemala</li>
+</ul>
+</div>
+<div id="advocates-for-children-of-nyc-2018-2019" class="section level3">
+<h3>Advocates for Children of NYC (2018-2019)</h3>
+<p>Served as a Project Associate on “Project Achieve”:</p>
+<ul>
+<li><a href="https://www.advocatesforchildren.org/who_we_serve/foster_care">Project Achieve</a></li>
+</ul>
+<p>Responsibilities:</p>
+<ul>
+<li>Provided education advocacy for students in or at risk of placement in foster care</li>
+<li>Managed personal caseload of students, with frequent challenges related to disabilities, mental health, and trauma history</li>
+<li>Performed and presented descriptive analysis of project data</li>
+<li>Created and compiled resources for local foster care agencies and conducted community outreach</li>
+<li>Assisted in documenting student case studies for grant applications</li>
+</ul>
+</div>
+<div id="scribeamerica-2016-2018" class="section level3">
+<h3>ScribeAmerica (2016-2018)</h3>
+<p>Served as s Medical Scribe and Quality Assurance Associate (QAA) with ScribeAmerica in Spokane, WA.</p>
+<p>Scribe Responsibilities:</p>
+<ul>
+<li>Eased physician documentation burden</li>
+<li>Documented patient history, regimen adherence, and provider assessment and plan with high efficiency and accuracy</li>
+<li>Familiarity with medical terminology, medical decision making, and electronic medical records (EPIC)</li>
+<li>Clinics: Pediatric Pulmonology and Cystic Fibrosis, Cardiology, and Gastroenterology (Hepatology)</li>
+</ul>
+<p>Additional QAA Responsibilities (2017-2018):</p>
+<ul>
+<li>Supervised and facilitated staff training</li>
+<li>Evaluated medical scribes and evaluated chart documentation to ensure quality</li>
+<li>Coordinated with medical providers regarding plans for staff improvement when necessary</li>
+</ul>
+</div>
+</div>
+<div id="other-skills-certifications" class="section level2">
+<h2>Other Skills &amp; Certifications</h2>
+<ul>
+<li>Training in Trauma-Informed Care (Sanctuary Model)</li>
+<li>Medical Terminology</li>
+<li>Electronic Medical Records (EPIC)</li>
+<li>SAS (Intermediate proficiency)</li>
+<li>R (Intermediate Proficiency)</li>
+<li>Beer Certified Server (Cicerone Level 1)</li>
+<li>Language: English (Fluent); Spanish (Intermediate)</li>
+</ul>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
