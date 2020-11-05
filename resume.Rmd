@@ -8,7 +8,7 @@ output:
 
 This page contains information on my educational and professional experience, which can also be accessed in the LinkedIn profile below: 
 
-* [My LinkedIn](linkedin.com/in/hannah-briggs-47ab08134)
+* [My LinkedIn](https://www.linkedin.com/in/hannah-briggs-47ab08134/)
 
 ## Education {.tabset}
 
