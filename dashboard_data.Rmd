@@ -32,7 +32,7 @@ nyc_inspect =
   
 ```
 
-Column {data-width=550}
+Row {data-width=550}
 -----------------------------------------------------------------------
 
 ### Total Critical Flags Across Various Cuisine Types in Manhattan
@@ -57,7 +57,7 @@ nyc_inspect %>%
           colors = "viridis")
 ```
 
-Column {data-width=450}
+Row {.tabset}
 -----------------------------------------------------------------------
 
 ### Distibution of "American" Cuisine that Received Critical Flags Across NYC Boroughs
