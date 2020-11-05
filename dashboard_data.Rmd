@@ -1,0 +1,103 @@
+---
+title: "NYC Food Inspections"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed 
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(flexdashboard)
+```
+
+```{r loading data}
+data("rest_inspec")
+
+nyc_inspect = 
+  rest_inspec %>% 
+  select(camis, dba, boro, zipcode, cuisine_description,
+         inspection_date, violation_code,
+         violation_description, critical_flag,
+         score, grade, zipcode) %>% 
+  separate(
+    inspection_date, 
+    into = c("inspection_year", NA, NA),
+    convert = TRUE
+    ) %>% 
+  rename(borough = boro)
+  
+```
+
+Column {data-width=550}
+-----------------------------------------------------------------------
+
+### Total Critical Flags Across Various Cuisine Types in Manhattan
+
+```{r scatterplot for critical flags}
+nyc_inspect %>% 
+  select(inspection_year, critical_flag, borough, cuisine_description) %>% 
+  filter(
+    critical_flag == "Critical", 
+    borough == "MANHATTAN",
+    cuisine_description %in% c("American", "Italian", "Barbecue", "Seafood", "Pizza", "Chinese", "Thai", "Korean", "Indian")
+    ) %>% 
+  group_by(inspection_year, cuisine_description) %>% 
+  summarise(
+    total_critical_flags = n()
+    ) %>% 
+  plot_ly(x = ~ inspection_year, 
+          y = ~ total_critical_flags, 
+          color = ~ cuisine_description,
+          type = "scatter", 
+          mode = "markers", 
+          colors = "viridis")
+```
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Distibution of "American" Cuisine that Received Critical Flags Across NYC Boroughs
+
+```{r}
+nyc_inspect %>% 
+  select(inspection_year, critical_flag, borough, cuisine_description) %>%
+filter(
+    critical_flag == "Critical", 
+    borough %in% c("MANHATTAN", "QUEENS", "BROOKLYN", "BRONX", "STATEN ISLAND"),
+    cuisine_description == "American"
+    ) %>%
+  group_by(borough, cuisine_description, inspection_year) %>% 
+  summarise(
+    critical_flags = n()
+    ) %>% 
+  plot_ly(y = ~ critical_flags, 
+          color = ~ borough,
+          type = "box", 
+          colors = "viridis")
+```
+
+### Total Critical Flags Across the NYC Boroughs from 2014 to 2017
+
+```{r}
+nyc_inspect %>% 
+  select(inspection_year, critical_flag, borough) %>% 
+  filter(
+    critical_flag == "Critical", 
+    borough %in% c("MANHATTAN", "QUEENS", "BROOKLYN", "BRONX", "STATEN ISLAND"),
+    inspection_year > 2013
+    ) %>% 
+  group_by(inspection_year, borough) %>% 
+  summarise(
+    total_critical_flags = n()
+    ) %>% 
+  plot_ly(x = ~ inspection_year, 
+          y = ~ total_critical_flags, 
+          color = ~ borough,
+          type = "bar", 
+          colors = "viridis")
+```
+
