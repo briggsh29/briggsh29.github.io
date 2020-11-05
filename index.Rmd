@@ -1,0 +1,21 @@
+---
+title: "Hannah Briggs"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+---
+
+## Welcome to my Website 
+
+I am a 2nd year graduate student and MPH Candidate at Columbia University, Mailman School of Public Health.
+
+You can find information on my professional and academic experiences under the "Resume" tab or via the link below:
+
+* [Resume](resume.html)
+
+You can also find a dashboard on a sample dataset and visualizations under the "NYC Food Inspections" tab. The dataset consists of NYC Restaurant Inspection Results. You can also access this page from the link below. 
+
+* [NYC Food Inspections](dashboard_data.html)
+

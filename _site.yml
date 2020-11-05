@@ -1,0 +1,16 @@
+name: "Hannah Briggs"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Resume"
+      href: resume.html
+    - text: "NYC Food Inspections"
+      href: dashboard_data.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<heb2133@cumc.columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/briggsh29/
+output:
+  html_document:
+    theme: journal
