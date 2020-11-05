@@ -76,7 +76,7 @@ filter(
     ) %>% 
   plot_ly(y = ~ critical_flags, 
           color = ~ borough,
-          type = "box", 
+          type = "box",
           colors = "viridis")
 ```
 
@@ -97,7 +97,7 @@ nyc_inspect %>%
   plot_ly(x = ~ inspection_year, 
           y = ~ total_critical_flags, 
           color = ~ borough,
-          type = "bar", 
+          type = "bar",
           colors = "viridis")
 ```
 
